@@ -1,0 +1,176 @@
+/* @use "./gradients" as gradients; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*PATRICK HAND FONT */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');;
+
+
+@font-face {
+    font-family: chibold;
+    src: url("../assets/fonts/CHIBOLD demo.ttf");
+}
+
+:root {
+    --sky-bg: url("../assets/images/home/Sky.svg");
+
+    --contents-gradient: linear-gradient(50deg, rgb(245, 114, 51, 100%), rgb(242, 208, 88, 60%), rgb(255, 236, 170, 0%));
+    --search-box-gradient: linear-gradient(to right, #ED9C51, #F5E275, #FFFFFF);
+    --chart-info_gradient: linear-gradient(to bottom, #F5E896, #F4BA3D, #F46531);
+    --link-gradient: linear-gradient(to bottom, #F0E6B7, #F5BE46, #F57731);
+    --btn-gradient: linear-gradient(to bottom, #F46531, #F4CA5D);
+    --filter-gradient: linear-gradient(to bottom, #F5B76C, #F5B431, #F57631);
+    --carousel-gradient: linear-gradient(to bottom, #F5BE46, #FFB776);
+    --logout-gradient: linear-gradient(to bottom, #F3BA2F, #FC3D2B);
+    --profile-details_gradient: linear-gradient(50deg, rgb(245, 114, 51, 100%), rgb(242, 208, 88, 60%),rgb(255, 236, 170, 0%) ) ;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--sky-bg);
+}
+
+/* HEADER */
+.header-bg {
+    background-image: url("../assets/images/home/Header.svg");
+    background-repeat: no-repeat;
+}
+
+.header-mobile {
+    background-image: none;
+    background-position-y: 0;
+}
+
+
+.btn-bg {
+    background-image: url("../assets/images/btn-bg.svg");
+}
+
+.bigBtn-bg {
+    background-image: url("../assets/images/big-btn-bg.svg");
+}
+
+@media screen and (max-width: 900px) {
+    .header-mobile {
+        background-image: url("../assets/images/home/mobile-bg.svg");
+    }
+}
+
+.homeBg-desktop {
+    background-image: none;
+}
+
+@media screen and (min-width: 900px) {
+    .homeBg-desktop {
+        background-image: url("../assets/images/home/home-bgDesktop.svg");
+    }
+}
+
+.homeBg-mobile {
+    background-image: url("../assets/images/home/mobile-bg.svg");
+}
+
+.profileBg-desktop {
+    background-image: none;
+}
+
+@media screen and (min-width: 900px) {
+    .profileBg-desktop {
+        background-image: url("../assets/images/profile/profile-desktop-bg.svg");
+    }
+}
+
+.dashboardBg-desktop {
+    background-image: url("../assets/images/home/mobile-bg.svg");
+}
+
+@media screen and (min-width: 900px) {
+    .dashboardBg-desktop {
+        background-image: url("../assets/images/dashboard/dashboardBg-desktop.svg");
+    }
+}
+
+
+.aboutBg-desktop {
+    background-image: url("../assets/images/home/mobile-bg.svg");
+}
+
+@media screen and (min-width: 900px) {
+    .aboutBg-desktop {
+        background-image: url("../assets/images/about/about-bg-desktop.svg");
+    }
+}
+
+.faqBg-desktop {
+    background-image: url("../assets/images/home/mobile-bg.svg");
+}
+
+@media screen and (min-width: 900px) {
+    .faqBg-desktop {
+        background-image: url("../assets/images/faqs/faqs-bg-desktop.svg");
+    }
+}
+
+.bg-sky {
+    background-repeat: no-repeat;
+    background-image: var(--sky-bg);
+}
+
+
+.link-gradient {
+     background-image: var(--link-gradient);
+}
+
+.btn-gradient {
+    background-image: var(--btn-gradient) ;
+}
+
+.filter-gradient {
+    background-image: var(--filter-gradient) ;
+}
+
+.carousel-gradient {
+    background-image: var(--carousel-gradient) ;
+}
+
+.btn-logout_gradient {
+    background-image: var(--logout-gradient);
+}
+
+.chart-info_gradient {
+    background-image: var(--chart-info_gradient) ;
+}
+
+.profile-details-gradient {
+    background-image: var(--profile-details_gradient) ;
+    backdrop-filter: blur(-18px);
+    -webkit-backdrop-filter: blur(-18px);
+}
+
+.search-box_gradient {
+    background-image: var(--search-box-gradient);
+}
+
+.contents-gradient {
+    background-image: var(--contents-gradient);
+    backdrop-filter: blur(-14px);
+    -webkit-backdrop-filter: blur(-14px);
+}
+
+.global-text_shadow {
+    text-shadow: 2px 2px 6px #161616, -2px -2px 6px #161616 ;
+}
+
+
+.text-stroke {
+    -webkit-text-stroke: 1px #91181D;
+}
